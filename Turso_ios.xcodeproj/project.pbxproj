@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		719431B32C2D8E1A000FE1F5 /* Turso_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719431B22C2D8E1A000FE1F5 /* Turso_iosApp.swift */; };
+		719431B52C2D8E1A000FE1F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719431B42C2D8E1A000FE1F5 /* ContentView.swift */; };
+		719431B72C2D8E1C000FE1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719431B62C2D8E1C000FE1F5 /* Assets.xcassets */; };
+		719431BA2C2D8E1C000FE1F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719431B92C2D8E1C000FE1F5 /* Preview Assets.xcassets */; };
+		719431C72C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */; };
+		719431CC2C2D9052000FE1F5 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719431CB2C2D9052000FE1F5 /* DatabaseManager.swift */; };
+		719431CE2C2D90AA000FE1F5 /* DatabaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719431CD2C2D90AA000FE1F5 /* DatabaseRow.swift */; };
+		719431D22C2D9131000FE1F5 /* libsqlite3_arm64.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		719431D32C2D9131000FE1F5 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				719431D22C2D9131000FE1F5 /* libsqlite3_arm64.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		719431AF2C2D8E1A000FE1F5 /* Turso_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turso_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		719431B22C2D8E1A000FE1F5 /* Turso_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turso_iosApp.swift; sourceTree = "<group>"; };
+		719431B42C2D8E1A000FE1F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		719431B62C2D8E1C000FE1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		719431B92C2D8E1C000FE1F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		719431C32C2D8E9C000FE1F5 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "../../../../projects/VectorMobile/libsql/libsql-sqlite3/sqlite3.h"; sourceTree = "<group>"; };
+		719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3_arm64.dylib; sourceTree = "<group>"; };
+		719431C82C2D8F74000FE1F5 /* Turso_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turso_ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		719431CB2C2D9052000FE1F5 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		719431CD2C2D90AA000FE1F5 /* DatabaseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		719431AC2C2D8E1A000FE1F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719431C72C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		719431A62C2D8E1A000FE1F5 = {
+			isa = PBXGroup;
+			children = (
+				719431B12C2D8E1A000FE1F5 /* Turso_ios */,
+				719431B02C2D8E1A000FE1F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		719431B02C2D8E1A000FE1F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				719431AF2C2D8E1A000FE1F5 /* Turso_ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		719431B12C2D8E1A000FE1F5 /* Turso_ios */ = {
+			isa = PBXGroup;
+			children = (
+				719431CF2C2D90B8000FE1F5 /* src */,
+				719431C12C2D8E56000FE1F5 /* sqlite */,
+				719431B22C2D8E1A000FE1F5 /* Turso_iosApp.swift */,
+				719431B62C2D8E1C000FE1F5 /* Assets.xcassets */,
+				719431B82C2D8E1C000FE1F5 /* Preview Content */,
+			);
+			path = Turso_ios;
+			sourceTree = "<group>";
+		};
+		719431B82C2D8E1C000FE1F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				719431B92C2D8E1C000FE1F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		719431C12C2D8E56000FE1F5 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				719431C32C2D8E9C000FE1F5 /* sqlite3.h */,
+				719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */,
+				719431C82C2D8F74000FE1F5 /* Turso_ios-Bridging-Header.h */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		719431CF2C2D90B8000FE1F5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				719431D12C2D90CD000FE1F5 /* classes */,
+				719431D02C2D90C6000FE1F5 /* Views */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		719431D02C2D90C6000FE1F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				719431B42C2D8E1A000FE1F5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		719431D12C2D90CD000FE1F5 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				719431CB2C2D9052000FE1F5 /* DatabaseManager.swift */,
+				719431CD2C2D90AA000FE1F5 /* DatabaseRow.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		719431AE2C2D8E1A000FE1F5 /* Turso_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 719431BD2C2D8E1C000FE1F5 /* Build configuration list for PBXNativeTarget "Turso_ios" */;
+			buildPhases = (
+				719431AB2C2D8E1A000FE1F5 /* Sources */,
+				719431AC2C2D8E1A000FE1F5 /* Frameworks */,
+				719431AD2C2D8E1A000FE1F5 /* Resources */,
+				719431D32C2D9131000FE1F5 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Turso_ios;
+			productName = Turso_ios;
+			productReference = 719431AF2C2D8E1A000FE1F5 /* Turso_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		719431A72C2D8E1A000FE1F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					719431AE2C2D8E1A000FE1F5 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 719431AA2C2D8E1A000FE1F5 /* Build configuration list for PBXProject "Turso_ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 719431A62C2D8E1A000FE1F5;
+			productRefGroup = 719431B02C2D8E1A000FE1F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				719431AE2C2D8E1A000FE1F5 /* Turso_ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		719431AD2C2D8E1A000FE1F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719431BA2C2D8E1C000FE1F5 /* Preview Assets.xcassets in Resources */,
+				719431B72C2D8E1C000FE1F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		719431AB2C2D8E1A000FE1F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719431B52C2D8E1A000FE1F5 /* ContentView.swift in Sources */,
+				719431CE2C2D90AA000FE1F5 /* DatabaseRow.swift in Sources */,
+				719431B32C2D8E1A000FE1F5 /* Turso_iosApp.swift in Sources */,
+				719431CC2C2D9052000FE1F5 /* DatabaseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		719431BB2C2D8E1C000FE1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		719431BC2C2D8E1C000FE1F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		719431BE2C2D8E1C000FE1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Turso_ios/Preview Content\"";
+				DEVELOPMENT_TEAM = Q54B2RZ2S7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Turso_ios/sqlite",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alew3.turso-ios.Turso-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Turso_ios/sqlite/Turso_ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		719431BF2C2D8E1C000FE1F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Turso_ios/Preview Content\"";
+				DEVELOPMENT_TEAM = Q54B2RZ2S7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Turso_ios/sqlite",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alew3.turso-ios.Turso-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Turso_ios/sqlite/Turso_ios-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		719431AA2C2D8E1A000FE1F5 /* Build configuration list for PBXProject "Turso_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719431BB2C2D8E1C000FE1F5 /* Debug */,
+				719431BC2C2D8E1C000FE1F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		719431BD2C2D8E1C000FE1F5 /* Build configuration list for PBXNativeTarget "Turso_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719431BE2C2D8E1C000FE1F5 /* Debug */,
+				719431BF2C2D8E1C000FE1F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 719431A72C2D8E1A000FE1F5 /* Project object */;
+}
