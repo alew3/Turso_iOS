@@ -15,6 +15,7 @@
 		719431CC2C2D9052000FE1F5 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719431CB2C2D9052000FE1F5 /* DatabaseManager.swift */; };
 		719431CE2C2D90AA000FE1F5 /* DatabaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719431CD2C2D90AA000FE1F5 /* DatabaseRow.swift */; };
 		719431D22C2D9131000FE1F5 /* libsqlite3_arm64.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		719431D52C30D2BF000FE1F5 /* dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 719431D42C30D2BF000FE1F5 /* dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,9 +40,10 @@
 		719431B92C2D8E1C000FE1F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		719431C32C2D8E9C000FE1F5 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "../../../../projects/VectorMobile/libsql/libsql-sqlite3/sqlite3.h"; sourceTree = "<group>"; };
 		719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3_arm64.dylib; sourceTree = "<group>"; };
-		719431C82C2D8F74000FE1F5 /* Turso_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turso_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		719431CB2C2D9052000FE1F5 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		719431CD2C2D90AA000FE1F5 /* DatabaseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRow.swift; sourceTree = "<group>"; };
+		719431D42C30D2BF000FE1F5 /* dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dummy.m; sourceTree = "<group>"; };
+		719431D62C30D35C000FE1F5 /* Turso_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turso_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		719431A62C2D8E1A000FE1F5 = {
 			isa = PBXGroup;
 			children = (
+				719431D42C30D2BF000FE1F5 /* dummy.m */,
 				719431B12C2D8E1A000FE1F5 /* Turso_ios */,
 				719431B02C2D8E1A000FE1F5 /* Products */,
 			);
@@ -97,7 +100,7 @@
 			children = (
 				719431C32C2D8E9C000FE1F5 /* sqlite3.h */,
 				719431C52C2D8EB2000FE1F5 /* libsqlite3_arm64.dylib */,
-				719431C82C2D8F74000FE1F5 /* Turso_ios-Bridging-Header.h */,
+				719431D62C30D35C000FE1F5 /* Turso_ios-Bridging-Header.h */,
 			);
 			path = sqlite;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719431D52C30D2BF000FE1F5 /* dummy.m in Sources */,
 				719431B52C2D8E1A000FE1F5 /* ContentView.swift in Sources */,
 				719431CE2C2D90AA000FE1F5 /* DatabaseRow.swift in Sources */,
 				719431B32C2D8E1A000FE1F5 /* Turso_iosApp.swift in Sources */,
