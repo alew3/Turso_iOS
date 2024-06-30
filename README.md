@@ -1,10 +1,10 @@
 # Turso_iOS
-This is an XCode sample project to help build and run Turso's SQLite fork with vector search capabilities on the IPhone. 
+This is an Xcode sample project to help build and run [Turso's SQLite](https://github.com/tursodatabase/) fork with vector search capabilities on the IPhone. 
 
-It was created for this Medium Post: [From Frustration to Innovation: Building AI-Powered Vector Search on iPhone](https://medium.com/@alessandrocauduro/from-frustration-to-innovation-building-ai-powered-vector-search-on-iphone-996b1502f4aa).
+It was created for this Medium Post: [From Frustration to Innovation: Building AI-Powered Vector Search on iPhone](https://alessandrocauduro.medium.com/building-ai-powered-vector-search-on-iphone-996b1502f4aa).
 
 
-## How to build libsqlite3 for iOS
+## How to build libsqlite3 from Turso for iOS
 If you want to rebuild the **libsqlite3_*.dylib** with the latest versions, follow the instructions below.
 
 Make sure to have Xcode and command line tools installed
@@ -28,14 +28,16 @@ Finally build SQLite for iOS
 cd ../..
 ./build_ios.sh
 ```
+Necessary files will be copied into the Xcode **/Turso_ios/sqlite** folder
 
-## Xcode
-This sample project is already setup and working, but if you want instructions on how to link the dylib, check the original
-[Medium Post](https://medium.com/@alessandrocauduro/from-frustration-to-innovation-building-ai-powered-vector-search-on-iphone-996b1502f4aa) 
+## Linking the lib in Xcode
+This sample project is already setup and working, but if you want instructions on how to link the dylib inside Xcode, check the original
+[Medium Post](https://alessandrocauduro.medium.com/building-ai-powered-vector-search-on-iphone-996b1502f4aa) 
 
 ### Testing
 
 - Click on the "Setup Database" to create a database on device and a sample vector table with data. 
 - Click on "Vector Search", if everything is working, this is what it should look like:
-
+<div align="center">
 <img src="./app_screenshot.png" alt="App Screenshot" width="300">
+</div>
