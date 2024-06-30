@@ -1,10 +1,11 @@
 # Turso_iOS
-This is an XCode sample project to run Turso's SQLite fork with vector search capabilities. 
-It was created for this [Medium Post](https://medium.com/@alessandrocauduro/from-frustration-to-innovation-building-ai-powered-vector-search-on-iphone-996b1502f4aa) about running vector search on device.
+This is an XCode sample project to help build and run Turso's SQLite fork with vector search capabilities on the IPhone. 
+
+It was created for this Medium Post: [From Frustration to Innovation: Building AI-Powered Vector Search on iPhone](https://medium.com/@alessandrocauduro/from-frustration-to-innovation-building-ai-powered-vector-search-on-iphone-996b1502f4aa).
 
 
 ## How to build libsqlite3 for iOS
-If you want to rebuild the [libsqlite3_arm64.dylib](Turso_ios/sqlite/libsqlite3_arm64.dylib) with the latest functionality.
+If you want to rebuild the **libsqlite3_*.dylib** with the latest versions, follow the instructions below.
 
 Make sure to have Xcode and command line tools installed
 ```bash
@@ -16,12 +17,12 @@ Clone the source code of the project. Currently the vector functionality is only
 git clone --branch vector --depth 1 https://github.com/tursodatabase/libsql.git
 ```
 
-First build SQLite for Mac (needed to generate files for the iOS build)
+Build SQLite for Mac (this is needed to generate files for the iOS build)
 ```bash
 cd libsql/libsql-sqlite3 && ./configure && make
 ```
 
-Build SQLite for iOS
+Finally build SQLite for iOS
 ```bash
 # go back to project folder and run the build script
 cd ../..
@@ -29,5 +30,12 @@ cd ../..
 ```
 
 ## Xcode
-This sample is already working, but if you want instructions on how to link the dylib, check the original
+This sample project is already setup and working, but if you want instructions on how to link the dylib, check the original
 [Medium Post](https://medium.com/@alessandrocauduro/from-frustration-to-innovation-building-ai-powered-vector-search-on-iphone-996b1502f4aa) 
+
+### Testing
+
+- Click on the "Setup Database" to create a database on device and a sample vector table with data. 
+- Click on "Vector Search", if everything is working, this is what it should look like:
+
+<img src="./app_screenshot.png" alt="App Screenshot" width="300">
