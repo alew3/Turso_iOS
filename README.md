@@ -1,7 +1,7 @@
 # Turso_iOS
 This is an Xcode sample project to help build and run [Turso's SQLite](https://github.com/tursodatabase/) fork with vector search capabilities on the IPhone. 
 
-It was created for this Medium Post: [From Frustration to Innovation: Building AI-Powered Vector Search on iPhone](https://alessandrocauduro.medium.com/building-ai-powered-vector-search-on-iphone-996b1502f4aa).
+It was created for this Medium Post: [Building AI-Powered Vector Image Search on iPhone](https://alessandrocauduro.medium.com/building-ai-powered-vector-search-on-iphone-996b1502f4aa).
 
 
 ## How to build libsqlite3 from Turso for iOS
