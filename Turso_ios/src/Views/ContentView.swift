@@ -19,7 +19,7 @@ class ContentViewModel: ObservableObject {
             CREATE TABLE movies (
               title TEXT,
               year INT,
-              embedding FLOAT32(3)
+              embedding F32_BLOB(3)
             );
             """
             ,
@@ -48,7 +48,7 @@ class ContentViewModel: ObservableObject {
               );
             """,
             """
-            CREATE INDEX movies_idx USING diskann_cosine_ops ON movies (embedding);
+            CREATE INDEX movies_idx ON movies(libsql_vector_idx(embedding));
             """
         ]
 
