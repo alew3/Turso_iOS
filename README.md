@@ -39,5 +39,5 @@ This sample project is already setup and working, but if you want instructions o
 - Click on the "Setup Database" to create a database on device and a sample vector table with data. 
 - Click on "Vector Search", if everything is working, this is what it should look like:
 <div align="center">
-<img src="./app_screenshot.png" alt="App Screenshot" width="300">
+<img src="./app_screenshot.jpeg" alt="App Screenshot" width="300">
 </div>

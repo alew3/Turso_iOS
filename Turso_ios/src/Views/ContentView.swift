@@ -55,8 +55,32 @@ class ContentViewModel: ObservableObject {
         Database().executeStatements(statements)
     }
     
-    func searchVector() {
-        let sql : String = "SELECT title, year FROM movies ORDER BY vector_distance_cos(embedding, '[3,1,2]') LIMIT 3;"
+    func searchVector(useIndex: Bool = false) {
+        
+        
+        let sql_no_index : String = """
+            SELECT
+                title,
+                year
+            FROM
+                movies
+            ORDER BY
+            vector_distance_cos(embedding, '[3,1,2]') LIMIT 3;
+        """
+        
+        let sql_with_index : String = """
+        SELECT
+            title,
+            year
+        FROM
+            vector_top_k('movies_idx', '[3,1,2]', 3)
+        JOIN
+            movies
+        ON
+            movies.rowid = id;
+"""
+        let sql = useIndex ? sql_with_index : sql_no_index
+        print(sql)
         
         guard let results = Database().executeSelect(query: sql) else {
             return
@@ -86,6 +110,7 @@ struct ContentView: View {
             Button(action: {
                 dbModel.setupDatabase()
                 msg = "Database Setup!"
+                dbModel.results = []
             }, label: {
                 Text("Setup Database")
                     .padding()
@@ -97,11 +122,24 @@ struct ContentView: View {
             }).padding()
 
             Button(action: {
-                dbModel.searchVector()
-                msg = "Search on database executed!"
+                dbModel.searchVector(useIndex: false)
+                msg = "Search on database without executed!"
 
             }, label: {
                 Text("Vector Search")
+                    .padding()
+                    .frame(width: 200)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }).padding()
+            
+            Button(action: {
+                dbModel.searchVector(useIndex: true)
+                msg = "Search on database with index executed!"
+
+            }, label: {
+                Text("Vector Search using Index")
                     .padding()
                     .frame(width: 200)
                     .background(Color.blue)
